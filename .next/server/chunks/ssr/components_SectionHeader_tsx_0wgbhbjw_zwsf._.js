@@ -1,0 +1,3 @@
+module.exports=[83920,a=>{"use strict";var b=a.i(87924);a.s(["f",0,function({eyebrow:a,title:c,sub:d}){return(0,b.jsxs)("div",{className:"mb-8",children:[(0,b.jsx)("p",{className:"mb-2 text-xs font-extrabold uppercase tracking-[0.2em] text-ink/60",children:a}),(0,b.jsx)("h2",{className:"font-display text-3xl font-black text-ink md:text-4xl",children:c}),d&&(0,b.jsx)("p",{className:"mt-2 max-w-xl text-ink/70",children:d})]})}])}];
+
+//# sourceMappingURL=components_SectionHeader_tsx_0wgbhbjw_zwsf._.js.map

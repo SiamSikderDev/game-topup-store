@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #edf5b4;
+  --card: #fffdf4;
+  --ink: #181812;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* Chunky macaly button */
+.btn-chunky {
+  @apply rounded-full border-2 border-ink font-extrabold shadow-hard transition-transform;
+}
+.btn-chunky:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 #181812;
+}
+.btn-chunky:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 #181812;
+}
+
+/* Cream card with hard border */
+.card-macaly {
+  @apply rounded-2xl border-2 border-ink bg-card shadow-hard;
+}
+
+/* Cream input */
+.input-macaly {
+  @apply w-full rounded-xl border-2 border-ink bg-card px-4 py-3 font-semibold text-ink placeholder:text-ink/40 focus:outline-none focus:shadow-hard-sm;
+}
+
+::selection {
+  background: #ffc53d;
+}
