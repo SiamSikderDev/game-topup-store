@@ -62,10 +62,10 @@ export const GAMES: Game[] = [
     paused: true, // placeholder prices were ~35% below Codashop BD retail (Oct 9) — resume after supplier pricing is set
     blurb: { bn: "Unknown Cash (UC) — Character ID দিয়ে টপ-আপ, মিনিটেই ডেলিভারি।", en: "Unknown Cash (UC) — top up with Character ID, delivered in minutes." },
     packages: [
-      { id: "pubg-60", name: "60 UC", amount: "60", priceBdt: 95, placeholder: true, tag: "POPULAR" },
-      { id: "pubg-325", name: "325 UC", amount: "325", priceBdt: 470, placeholder: true },
-      { id: "pubg-660", name: "660 UC", amount: "660", priceBdt: 940, placeholder: true },
-      { id: "pubg-1800", name: "1800 UC", amount: "1800", priceBdt: 2350, placeholder: true, tag: "BEST VALUE" },
+      { id: "pubg-60", name: "60 UC", amount: "60", priceBdt: 165, placeholder: true, tag: "POPULAR" },
+      { id: "pubg-325", name: "325 UC", amount: "325", priceBdt: 825, placeholder: true },
+      { id: "pubg-660", name: "660 UC", amount: "660", priceBdt: 1650, placeholder: true },
+      { id: "pubg-1800", name: "1800 UC", amount: "1800", priceBdt: 4120, placeholder: true, tag: "BEST VALUE" },
     ],
   },
   {
