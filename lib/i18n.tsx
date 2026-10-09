@@ -64,6 +64,9 @@ const bn = {
     errUid: "তোমার Player UID দুইবার লিখো।",
     errMismatch: "দুইটা UID মিলছে না — আবার চেক করো।",
     errNumeric: "UID শুধু সংখ্যা হবে (কমপক্ষে ৪ ডিজিট)।",
+    pausedBadge: "সাময়িক বন্ধ",
+    pausedTitle: "শীঘ্রই ফিরছি!",
+    pausedDesc: "দাম আপডেট করা হচ্ছে — অর্ডার আপাতত বন্ধ। অন্য গেমগুলো চালু আছে।",
   },
   checkout: {
     eyebrow: "চেকআউট",
@@ -233,6 +236,9 @@ const en: typeof bn = {
     errUid: "Enter your Player UID twice.",
     errMismatch: "UIDs don't match — check again.",
     errNumeric: "UID must be numeric (min 4 digits).",
+    pausedBadge: "PAUSED",
+    pausedTitle: "Back soon!",
+    pausedDesc: "Prices are being updated — orders are paused for now. Other games are still live.",
   },
   checkout: {
     eyebrow: "Checkout",

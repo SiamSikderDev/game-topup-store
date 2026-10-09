@@ -22,6 +22,8 @@ export type Game = {
   letter: string;
   blurb: { bn: string; en: string };
   packages: GamePackage[];
+  // paused games show a "coming soon" notice and block checkout (reversible)
+  paused?: boolean;
 };
 
 export const GAMES: Game[] = [
@@ -57,6 +59,7 @@ export const GAMES: Game[] = [
     currency: "UC",
     tile: "bg-skyy",
     letter: "UC",
+    paused: true, // placeholder prices were ~35% below Codashop BD retail (Oct 9) — resume after supplier pricing is set
     blurb: { bn: "Unknown Cash (UC) — Character ID দিয়ে টপ-আপ, মিনিটেই ডেলিভারি।", en: "Unknown Cash (UC) — top up with Character ID, delivered in minutes." },
     packages: [
       { id: "pubg-60", name: "60 UC", amount: "60", priceBdt: 95, placeholder: true, tag: "POPULAR" },

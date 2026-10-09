@@ -51,6 +51,25 @@ export default function GamePage() {
 
   if (!game) notFound();
 
+  if (game.paused) {
+    return (
+      <div className="mx-auto max-w-6xl px-4 py-10">
+        <Link href="/#games" className="text-sm font-bold text-ink/60 hover:text-ink">
+          {t.game.back}
+        </Link>
+        <div className="mt-10 mx-auto max-w-xl">
+          <div className="card-macaly p-8 text-center">
+            <span className="inline-block rounded-full border-2 border-ink bg-sun px-4 py-1 text-xs font-extrabold uppercase">
+              {t.game.pausedBadge}
+            </span>
+            <h1 className="mt-4 font-display text-3xl font-black">{game.name} — {t.game.pausedTitle}</h1>
+            <p className="mt-3 text-ink/70">{t.game.pausedDesc}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   const pkg = game.packages.find((p) => p.id === pkgId);
 
   const proceed = () => {

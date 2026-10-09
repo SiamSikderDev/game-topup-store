@@ -59,8 +59,13 @@ export default function Home() {
             <Link
               key={g.slug}
               href={`/game/${g.slug}`}
-              className="card-macaly group block overflow-hidden transition-transform hover:-translate-y-1"
+              className="card-macaly group relative block overflow-hidden transition-transform hover:-translate-y-1"
             >
+              {g.paused && (
+                <span className="absolute right-3 top-3 z-10 rounded-full border-2 border-ink bg-sun px-2.5 py-0.5 text-[10px] font-extrabold uppercase">
+                  {t.game.pausedBadge}
+                </span>
+              )}
               <div className={`flex h-28 items-center justify-center border-b-2 border-ink ${g.tile}`}>
                 <span className="font-display text-4xl font-black text-ink">{g.letter}</span>
               </div>

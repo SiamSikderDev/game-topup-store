@@ -30,7 +30,7 @@ function CheckoutInner() {
     [method]
   );
 
-  if (!game || !pkg) {
+  if (!game || !pkg || game.paused) {
     return (
       <div className="mx-auto max-w-2xl px-4 py-16 text-center">
         <h1 className="font-display text-2xl font-black">{t.checkout.noInfo}</h1>
